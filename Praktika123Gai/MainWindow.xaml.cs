@@ -21,12 +21,13 @@ namespace Praktika123Gai
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        GaiBD_123Entities context;
         public MainWindow()
         {
             InitializeComponent();
-
-
-            
+            context = new GaiBD_123Entities();
+            myFrame.Navigate(new Pages.Autorization(context));
         }
 
        
