@@ -19,15 +19,17 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" >Регистрация</TextBlock>
         <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите FIO:</TextBlock>
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="FIOBox"  FontSize="25"/>
-        <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите FIO:</TextBlock>
+        <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите Табельный номер:</TextBlock>
         <TextBox Grid.Row="2" Grid.Column="1" x:Name="TablnomerBox"  FontSize="25"/>
-        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите FIO:</TextBlock>
+        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите Логин :</TextBlock>
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="loginBox"  FontSize="25"/>
-        <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите FIO:</TextBlock>
+        <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите Пароль:</TextBlock>
         <TextBox Grid.Row="4" Grid.Column="1" x:Name="passwordBox"  FontSize="25"/>
+        <Button Grid.ColumnSpan="2" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Click="AddClick" >Добавить</Button>
     </Grid>
 </Window>

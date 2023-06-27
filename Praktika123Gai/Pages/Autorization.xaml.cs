@@ -74,5 +74,12 @@ namespace Praktika123Gai.Pages
                 }
             }
         }
+
+        private void RegistrationClick(object sender, RoutedEventArgs e)
+        {
+            Registration regWindow = new Registration(context);
+            regWindow.Show();
+
+        }
     }
 }

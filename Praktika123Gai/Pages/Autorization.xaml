@@ -54,6 +54,6 @@
             </TextBox>
         </StackPanel>
         <Button Grid.Column="1" Grid.Row="4" Margin="160,19,160,0" Click="EnterClick" Name="buttonEnter" Background="#fecb00" Foreground="#302092">Вход</Button>
-        <Button Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Margin="444,15,5,5">Регистрация</Button>
+        <Button Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Margin="444,15,5,5" Click="RegistrationClick" >Регистрация</Button>
     </Grid>
 </Page>
