@@ -28,15 +28,14 @@ namespace Praktika123Gai.Pages
 
         private void AddClick(object sender, RoutedEventArgs e)
         {
-            Users user = new Users()
+            User user = new User()
             {
                 FIO = FIOBox.Text,
-                password = passwordBox.Text,
-                login = loginBox.Text,
                 Tablnomer = Convert.ToInt32(TablnomerBox.Text),
-                
+                login = loginBox.Text,
+                password = passwordBox.Text,
             };
-            context.Users.Add(user);
+            context.User.Add(user);
             context.SaveChanges();
             this.Close();
         }

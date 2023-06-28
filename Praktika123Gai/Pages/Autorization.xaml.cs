@@ -58,8 +58,7 @@ namespace Praktika123Gai.Pages
                     MessageBox.Show("Вы ввели неверный пароль!!!");
                     if (countClick>=3)
                     {
-                        buttonEnter.IsEnabled = false;
-                        timer.Start();
+                        remeberBtn.Visibility= Visibility.Visible;
                     }
                 }
                 
@@ -69,17 +68,23 @@ namespace Praktika123Gai.Pages
                 MessageBox.Show("Такого пользователя не существует!!!");
                 if (countClick >= 3)
                 {
-                    buttonEnter.IsEnabled = false;
-                    timer.Start();
+                    remeberBtn.Visibility = Visibility.Visible;
                 }
             }
         }
 
         private void RegistrationClick(object sender, RoutedEventArgs e)
         {
-            Registration regWindow = new Registration(context);
-            regWindow.Show();
-
+            // Registration regWindow = new Registration(context);
+            // regWindow.Show();
+            
+            
         }
+
+        private void RememberPassClick(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
     }
 }

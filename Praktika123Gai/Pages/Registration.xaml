@@ -19,7 +19,6 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="40" >Регистрация</TextBlock>
         <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5" FontSize="25" >Введите FIO:</TextBlock>
