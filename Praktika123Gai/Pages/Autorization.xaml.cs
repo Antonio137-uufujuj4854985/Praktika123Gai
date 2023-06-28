@@ -83,7 +83,8 @@ namespace Praktika123Gai.Pages
 
         private void RememberPassClick(object sender, RoutedEventArgs e)
         {
-           
+            User us = context.User.Find(loginBox.Text);
+            NavigationService.Navigate(new RememberPassPage(us));
         }
 
     }
