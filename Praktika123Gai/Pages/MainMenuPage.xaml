@@ -9,6 +9,20 @@
       Title="MainMenuPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame Name="frameToBasePages" Grid.Column="1"/>
+        <StackPanel Orientation="Vertical" Background="White">
+            <Image Source="/Images/Logo.jpg"  Height="100"/>
+            <Button Margin="5,10,5,0" Background="#fecb00" Foreground="#302092">Автомобили</Button>
+            <Button Click ="DriverClick" Margin="5,10,5,10" Background="#fecb00" Foreground="#302092">История владельцев</Button>
+            <Button Click="EscapeClick" Margin="5,0,5,10" Background="#fecb00" Foreground="#302092">Выход</Button>
+
+
+        </StackPanel>
+
+
     </Grid>
 </Page>

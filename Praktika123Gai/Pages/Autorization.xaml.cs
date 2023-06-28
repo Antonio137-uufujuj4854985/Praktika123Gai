@@ -23,10 +23,12 @@ namespace Praktika123Gai.Pages
     {
         GaiBD_123Entities context;
         DispatcherTimer timer;
-        public Autorization(GaiBD_123Entities cont)
+        Window window;
+        public Autorization(GaiBD_123Entities cont, Window w)
         {
             InitializeComponent();
             context = cont;
+            window = w;
             timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 30);
             timer.Tick += Timer_Tick;
@@ -55,11 +57,11 @@ namespace Praktika123Gai.Pages
                 }
                 else
                 {
-                    MessageBox.Show("Вы ввели неверный пароль!!!");
-                    if (countClick>=3)
-                    {
-                        remeberBtn.Visibility= Visibility.Visible;
-                    }
+                    countClick = 0;
+                    context.SaveChanges();
+                    NavigationService.Navigate(new MainMenuPage(context, window));
+                       
+                   
                 }
                 
             }

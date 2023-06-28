@@ -9,6 +9,19 @@
       Title="RememberPassPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" >Введите логин</TextBlock>
+        <TextBox x:Name="loginBox" Grid.Row="3"/>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" >Введите ваш пароль</TextBlock>
+        <TextBox x:Name="passwordBox" Grid.Row="5"/>
+        <Button Grid.Row="6" Click="ShowPassword" >Напомнить</Button>
     </Grid>
 </Page>

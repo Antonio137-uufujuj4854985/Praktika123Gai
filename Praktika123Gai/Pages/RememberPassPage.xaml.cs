@@ -20,13 +20,18 @@ namespace Praktika123Gai.Pages
     /// </summary>
     public partial class RememberPassPage : Page
     {
-        public RememberPassPage()
+        User _user;
+        public RememberPassPage(User user)
         {
             InitializeComponent();
+            loginBox.Text = user.FIO;
+            _user = user;
         }
 
         private void ShowPassword(object sender, RoutedEventArgs e)
         {
+            if (_user.FIO == loginBox.Text && _user.password==(passwordBox.Text))
+                MessageBox.Show($"Ваш пароль: {_user.password}", "Пароль", MessageBoxButton.OK, MessageBoxImage.Information);
 
         }
     }

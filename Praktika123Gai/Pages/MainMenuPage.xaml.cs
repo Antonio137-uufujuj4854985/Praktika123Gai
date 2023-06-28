@@ -20,9 +20,15 @@ namespace Praktika123Gai.Pages
     /// </summary>
     public partial class MainMenuPage : Page
     {
-        public MainMenuPage()
+        Window Window;
+        public MainMenuPage(GaiBD_123Entities context, Window window)
         {
             InitializeComponent();
+        }
+
+        private void EscapeClick(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }
